@@ -3,4 +3,6 @@ class AbbyController < ApplicationController
   end
   def about
   end
+  def repair
+  end
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :views
   #get 'abby/pages'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'abby#pages'
   get 'about' => 'abby#about'
+  get 'repair' => 'abby#repair'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
